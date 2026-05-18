@@ -1,91 +1,181 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardápio · Sakura</title>
-  <link rel="stylesheet" href="../src/css/estilo.css">
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio · Sakura</title>
+    <link rel="stylesheet" href="../src/css/estilo.css">
+  </head>
+  <body>
 
-  <!-- ===== Cabecalho ===== -->
-  <header class="cabecalho">
-    <div class="container cabecalho-conteudo">
-      <a href="../index.html" class="logo">
-        <span class="logo-kanji">桜</span>
-        <span class="logo-texto">SAKURA</span>
-      </a>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a href="../index.html" class="logo">
+          <span class="logo-kanji">桜</span>
+          <span class="logo-texto">SAKURA</span>
+        </a>
 
-      <nav class="navegacao" id="navegacao">
-        <ul class="menu">
-          <li><a href="../index.html" class="link-menu">Home</a></li>
-          <li><a href="portifolio.html" class="link-menu ativo">Cardápio</a></li>
-          <li><a href="sobre.html" class="link-menu">Sobre</a></li>
-          <li><a href="contato.html" class="link-menu">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="navegacao" id="navegacao">
+          <ul class="menu">
+            <li><a href="../index.html" class="link-menu">Home</a></li>
+            <li><a href="portifolio.html" class="link-menu ativo">Cardápio</a></li>
+            <li><a href="sobre.html" class="link-menu">Sobre</a></li>
+            <li><a href="contato.html" class="link-menu">Contato</a></li>
+          </ul>
+        </nav>
 
-      <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+        <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-  <main>
-    <!-- Conteudo do cardapio vai aqui -->
-  </main>
+    <main>
 
-  <!-- ===== Rodape ===== -->
-  <footer class="rodape">
-    <div class="container">
-      <div class="rodape-grade">
+      <section class="pagina-hero">
+        <div class="container pagina-hero-conteudo">
+          <p class="kanji">お品書き · <span class="kanji-pt">CARDÁPIO</span></p>
+          <h1 class="pagina-titulo">Nosso cardápio</h1>
+          <p class="pagina-subtitulo">Pratos preparados com ingredientes frescos importados semanalmente</p>
+        </div>
+      </section>
 
-        <div class="rodape-coluna rodape-marca">
-          <div class="logo logo-rodape">
-            <span class="logo-kanji">桜</span>
-            <span class="logo-texto">SAKURA</span>
+      <section class="pratos">
+        <div class="container">
+          <div class="grade-pratos">
+
+            <article class="card-prato-cardapio">
+              <div class="card-imagem-clara"></div>
+              <div class="card-corpo-claro">
+                <span class="card-badge">MAIS PEDIDO</span>
+                <h3 class="card-titulo-escuro">Sashimi Premium</h3>
+                <p class="card-descricao-escura">Cortes nobres de salmão, atum e peixe-branco · 12 fatias</p>
+                <div class="card-rodape">
+                  <span class="card-preco">R$ 89</span>
+                  <button class="botao-adicionar">+ Adicionar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-prato-cardapio">
+              <div class="card-imagem-clara"></div>
+              <div class="card-corpo-claro">
+                <span class="card-badge">NOVO</span>
+                <h3 class="card-titulo-escuro">Combo Sakura</h3>
+                <p class="card-descricao-escura">20 peças variadas com nigiri, sashimi e uramaki especial</p>
+                <div class="card-rodape">
+                  <span class="card-preco">R$ 119</span>
+                  <button class="botao-adicionar">+ Adicionar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-prato-cardapio">
+              <div class="card-imagem-clara"></div>
+              <div class="card-corpo-claro">
+                <span class="card-badge">ASSINATURA</span>
+                <h3 class="card-titulo-escuro">Temaki Trufado</h3>
+                <p class="card-descricao-escura">Salmão grelhado, cream cheese e óleo de trufa branca</p>
+                <div class="card-rodape">
+                  <span class="card-preco">R$ 42</span>
+                  <button class="botao-adicionar">+ Adicionar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-prato-cardapio">
+              <div class="card-imagem-clara"></div>
+              <div class="card-corpo-claro">
+                <h3 class="card-titulo-escuro">Hot Roll Filadélfia</h3>
+                <p class="card-descricao-escura">Salmão, cream cheese, empanado e flambado · 10 peças</p>
+                <div class="card-rodape">
+                  <span class="card-preco">R$ 56</span>
+                  <button class="botao-adicionar">+ Adicionar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-prato-cardapio">
+              <div class="card-imagem-clara"></div>
+              <div class="card-corpo-claro">
+                <span class="card-badge">CHEF</span>
+                <h3 class="card-titulo-escuro">Ramen Tonkotsu</h3>
+                <p class="card-descricao-escura">Caldo de porco cozido 12h, lamen, chashu e ovo marinado</p>
+                <div class="card-rodape">
+                  <span class="card-preco">R$ 68</span>
+                  <button class="botao-adicionar">+ Adicionar</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="card-prato-cardapio">
+              <div class="card-imagem-clara"></div>
+              <div class="card-corpo-claro">
+                <h3 class="card-titulo-escuro">Yakisoba Especial</h3>
+                <p class="card-descricao-escura">Macarrão, legumes salteados e camarão · porção generosa</p>
+                <div class="card-rodape">
+                  <span class="card-preco">R$ 54</span>
+                  <button class="botao-adicionar">+ Adicionar</button>
+                </div>
+              </div>
+            </article>
+
           </div>
-          <p class="rodape-tagline">
-            Restaurante japonês autêntico<br>desde 2002.
-          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grade">
+
+          <div class="rodape-coluna rodape-marca">
+            <div class="logo logo-rodape">
+              <span class="logo-kanji">桜</span>
+              <span class="logo-texto">SAKURA</span>
+            </div>
+            <p class="rodape-tagline">
+              Restaurante japonês autêntico<br>desde 2002.
+            </p>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4 class="rodape-titulo">CONTATO</h4>
+            <ul class="rodape-lista">
+              <li>(11) 4002-8922</li>
+              <li>contato@sakura.com.br</li>
+              <li>R. Galvão Bueno, 540 — Liberdade</li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4 class="rodape-titulo">FUNCIONAMENTO</h4>
+            <ul class="rodape-lista">
+              <li>Ter – Dom · 18h às 23h30</li>
+              <li>Segunda · Fechado</li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4 class="rodape-titulo">REDES</h4>
+            <ul class="rodape-lista">
+              <li>Instagram · @sakurasp</li>
+              <li>Facebook · /sakurasp</li>
+              <li>WhatsApp · Atendimento</li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="rodape-coluna">
-          <h4 class="rodape-titulo">CONTATO</h4>
-          <ul class="rodape-lista">
-            <li>(11) 4002-8922</li>
-            <li>contato@sakura.com.br</li>
-            <li>R. Galvão Bueno, 540 — Liberdade</li>
-          </ul>
+        <div class="rodape-base">
+          <p>© 2026 Sakura Restaurante. Todos os direitos reservados.</p>
         </div>
-
-        <div class="rodape-coluna">
-          <h4 class="rodape-titulo">FUNCIONAMENTO</h4>
-          <ul class="rodape-lista">
-            <li>Ter – Dom · 18h às 23h30</li>
-            <li>Segunda · Fechado</li>
-          </ul>
-        </div>
-
-        <div class="rodape-coluna">
-          <h4 class="rodape-titulo">REDES</h4>
-          <ul class="rodape-lista">
-            <li>Instagram · @sakurasp</li>
-            <li>Facebook · /sakurasp</li>
-            <li>WhatsApp · Atendimento</li>
-          </ul>
-        </div>
-
       </div>
+    </footer>
 
-      <div class="rodape-base">
-        <p>© 2026 Sakura Restaurante. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../src/js/script.js"></script>
-</body>
-</html>
+    <script src="../src/js/script.js"></script>
+  </body>
+  </html>

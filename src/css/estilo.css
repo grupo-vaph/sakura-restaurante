@@ -587,3 +587,124 @@ button {
     padding-bottom: 28px;
   }
 }
+
+.pagina-hero {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 80px 0 100px;
+    text-align: center;
+  }
+
+  .pagina-hero .kanji {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .pagina-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .pagina-subtitulo {
+    color: var(--texto-suave);
+    font-size: 1rem;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .pratos {
+    background-color: var(--creme);
+    padding: 80px 0;
+  }
+
+  .grade-pratos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .card-prato-cardapio {
+    background-color: var(--branco);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .card-prato-cardapio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-imagem-clara {
+    background-color: #d8d2c4;
+    height: 200px;
+  }
+
+  .card-corpo-claro {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .card-titulo-escuro {
+    font-family: var(--fonte-titulo);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--texto-escuro);
+    margin: 8px 0;
+  }
+
+  .card-descricao-escura {
+    color: #6a6a6a;
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+    flex: 1;
+  }
+
+  .card-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .botao-adicionar {
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: opacity 0.2s;
+  }
+
+  .botao-adicionar:hover {
+    opacity: 0.85;
+  }
+
+  @media (max-width: 768px) {
+    .pagina-hero {
+      padding: 50px 0 60px;
+    }
+
+    .pagina-titulo {
+      font-size: 2.4rem;
+    }
+
+    .pratos {
+      padding: 40px 0;
+    }
+
+    .grade-pratos {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .card-imagem-clara {
+      height: 160px;
+    }
+  }
