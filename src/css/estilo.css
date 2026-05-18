@@ -354,6 +354,14 @@ button {
 .card-imagem {
   background-color: #333333;
   height: 200px;
+  overflow: hidden;
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-corpo {
@@ -631,6 +639,14 @@ button {
   .card-imagem-clara {
     background-color: #d8d2c4;
     height: 200px;
+    overflow: hidden;
+  }
+
+  .card-imagem-clara img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .card-corpo-claro {
@@ -869,9 +885,14 @@ button {
   background-color: #d6a87a;
   height: 480px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+
+.filosofia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .filosofia-texto .subtitulo {
