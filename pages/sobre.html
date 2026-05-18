@@ -1,51 +1,146 @@
- <footer class="rodape">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre · Sakura</title>
+  <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="../index.html" class="logo">
+        <span class="logo-kanji">桜</span>
+        <span class="logo-texto">SAKURA</span>
+      </a>
+
+      <nav class="navegacao" id="navegacao">
+        <ul class="menu">
+          <li><a href="../index.html" class="link-menu">Home</a></li>
+          <li><a href="portifolio.html" class="link-menu">Cardápio</a></li>
+          <li><a href="sobre.html" class="link-menu ativo">Sobre</a></li>
+          <li><a href="contato.html" class="link-menu">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="pagina-hero">
       <div class="container">
-        <div class="rodape-grade">
+        <p class="kanji">私たちの物語 · <span class="kanji-pt">DESDE 2002</span></p>
+        <h1 class="pagina-titulo">Nossa história</h1>
+        <p class="pagina-subtitulo">Três gerações de tradição japonesa servidas com respeito ao ingrediente brasileiro.</p>
+      </div>
+    </section>
 
-          <div class="rodape-coluna rodape-marca">
-            <div class="logo logo-rodape">
-              <span class="logo-kanji">桜</span>
-              <span class="logo-texto">SAKURA</span>
-            </div>
-            <p class="rodape-tagline">
-              Restaurante japonês autêntico<br>desde 2002.
-            </p>
-          </div>
-
-          <div class="rodape-coluna">
-            <h4 class="rodape-titulo">CONTATO</h4>
-            <ul class="rodape-lista">
-              <li>(11) 4002-8922</li>
-              <li>contato@sakura.com.br</li>
-              <li>R. Galvão Bueno, 540 — Liberdade</li>
-            </ul>
-          </div>
-
-          <div class="rodape-coluna">
-            <h4 class="rodape-titulo">FUNCIONAMENTO</h4>
-            <ul class="rodape-lista">
-              <li>Ter – Dom · 18h às 23h30</li>
-              <li>Segunda · Fechado</li>
-            </ul>
-          </div>
-
-          <div class="rodape-coluna">
-            <h4 class="rodape-titulo">REDES</h4>
-            <ul class="rodape-lista">
-              <li>Instagram · @sakurasp</li>
-              <li>Facebook · /sakurasp</li>
-              <li>WhatsApp · Atendimento</li>
-            </ul>
-          </div>
-
+    <section class="filosofia">
+      <div class="container filosofia-conteudo">
+        <div class="filosofia-imagem">
+          <span class="placeholder-texto-claro">[ chef Hiroshi · retrato ]</span>
         </div>
-
-        <div class="rodape-base">
-          <p>© 2026 Sakura Restaurante. Todos os direitos reservados.</p>
+        <div class="filosofia-texto">
+          <p class="subtitulo">A FILOSOFIA</p>
+          <h2 class="titulo-secao">Itadakimasu.</h2>
+          <p>Fundado em 2002 pelo chef Hiroshi Tanaka, o Sakura nasceu do desejo de trazer a culinária da pequena Osaka para o coração de São Paulo. Nada de adaptações desnecessárias: peixe fresco, arroz lavado sete vezes e respeito ao tempo de cada ingrediente.</p>
+          <p>Trabalhamos com a filosofia do shun — respeitar o tempo certo de cada ingrediente. Nossos peixes chegam diariamente do CEAGESP e o caldo do ramen leva 18 horas para ficar pronto.</p>
+          <p>Não somos um restaurante grande. Somos um restaurante de família, e cada cliente que cruza nossa porta é tratado como se fosse um convidado em nossa casa.</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="../src/js/script.js"></script>
-  </body>
-  </html>
+    <section class="linha-tempo">
+      <div class="container">
+        <p class="subtitulo">LINHA DO TEMPO</p>
+        <h2 class="titulo-secao">23 anos de história</h2>
+        <div class="grade-tempo">
+
+          <article class="card-tempo">
+            <h3 class="tempo-ano">2002</h3>
+            <h4 class="tempo-titulo">O começo</h4>
+            <p class="tempo-texto">Abertura no bairro da Liberdade com apenas 6 mesas e o chef Hiroshi.</p>
+          </article>
+
+          <article class="card-tempo">
+            <h3 class="tempo-ano">2008</h3>
+            <h4 class="tempo-titulo">Reconhecimento</h4>
+            <p class="tempo-texto">Eleito entre os 10 melhores restaurantes japoneses de São Paulo pela Veja Comer & Beber.</p>
+          </article>
+
+          <article class="card-tempo">
+            <h3 class="tempo-ano">2015</h3>
+            <h4 class="tempo-titulo">Nova casa</h4>
+            <p class="tempo-texto">Mudança para o endereço atual, com balcão de sushi e três salas privativas.</p>
+          </article>
+
+          <article class="card-tempo">
+            <h3 class="tempo-ano">2024</h3>
+            <h4 class="tempo-titulo">Premiação</h4>
+            <p class="tempo-texto">Bib Gourmand no Guia Michelin São Paulo, a primeira do grupo.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+
+        <div class="rodape-coluna rodape-marca">
+          <div class="logo logo-rodape">
+            <span class="logo-kanji">桜</span>
+            <span class="logo-texto">SAKURA</span>
+          </div>
+          <p class="rodape-tagline">
+            Restaurante japonês autêntico<br>desde 2002.
+          </p>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4 class="rodape-titulo">CONTATO</h4>
+          <ul class="rodape-lista">
+            <li>(11) 4002-8922</li>
+            <li>contato@sakura.com.br</li>
+            <li>R. Galvão Bueno, 540 — Liberdade</li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4 class="rodape-titulo">FUNCIONAMENTO</h4>
+          <ul class="rodape-lista">
+            <li>Ter – Dom · 18h às 23h30</li>
+            <li>Segunda · Fechado</li>
+          </ul>
+        </div>
+
+        <div class="rodape-coluna">
+          <h4 class="rodape-titulo">REDES</h4>
+          <ul class="rodape-lista">
+            <li>Instagram · @sakurasp</li>
+            <li>Facebook · /sakurasp</li>
+            <li>WhatsApp · Atendimento</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="rodape-base">
+        <p>© 2026 Sakura Restaurante. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
