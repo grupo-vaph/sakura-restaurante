@@ -252,25 +252,15 @@ button {
   background-color: #3a0a14;
   height: 440px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   position: relative;
 }
 
-.hero-imagem::after {
-  content: "";
-  position: absolute;
-  bottom: 38%;
-  width: 60px;
-  height: 2px;
-  background-color: var(--dourado);
-}
-
-.placeholder-texto {
-  color: var(--dourado);
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
+.hero-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ---------- Nossa Essencia ---------- */
@@ -290,15 +280,14 @@ button {
   background-color: #d6a87a;
   height: 380px;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
-.placeholder-texto-claro {
-  color: #6b4226;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+.essencia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .essencia-texto .subtitulo {
