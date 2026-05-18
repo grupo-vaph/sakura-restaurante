@@ -273,6 +273,137 @@ button {
   letter-spacing: 0.1em;
 }
 
+/* ---------- Nossa Essencia ---------- */
+.essencia {
+  background-color: var(--creme);
+  padding: 90px 0;
+}
+
+.essencia-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.essencia-imagem {
+  background-color: #d6a87a;
+  height: 380px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-texto-claro {
+  color: #6b4226;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.essencia-texto .subtitulo {
+  margin-bottom: 18px;
+}
+
+.essencia-descricao {
+  margin: 24px 0 28px;
+  color: #4a4a4a;
+  font-size: 1rem;
+}
+
+.link-destaque {
+  color: var(--vermelho);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.link-destaque:hover {
+  opacity: 0.75;
+}
+
+/* ---------- Destaques do menu ---------- */
+.destaques {
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 90px 0;
+}
+
+.destaques-cabecalho {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.subtitulo-dourado {
+  color: var(--dourado);
+}
+
+.titulo-claro {
+  color: var(--branco);
+  margin-top: 14px;
+}
+
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card-prato {
+  background-color: var(--preto-card);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s;
+}
+
+.card-prato:hover {
+  transform: translateY(-4px);
+}
+
+.card-imagem {
+  background-color: #333333;
+  height: 200px;
+}
+
+.card-corpo {
+  padding: 20px;
+  position: relative;
+}
+
+.card-badge {
+  display: inline-block;
+  background-color: var(--vermelho);
+  color: var(--branco);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.card-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-descricao {
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+  min-height: 42px;
+}
+
+.card-preco {
+  color: var(--vermelho);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 /* ---------- Responsivo (mobile) ---------- */
 @media (max-width: 768px) {
   .container {
@@ -333,5 +464,67 @@ button {
 
   .hero-botoes .botao {
     text-align: center;
+  }
+
+  .essencia {
+    padding: 50px 0;
+  }
+
+  .essencia-conteudo {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .essencia-imagem {
+    height: 220px;
+  }
+
+  .destaques {
+    padding: 50px 0;
+  }
+
+  .destaques-cabecalho {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .grade-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Cards viram mini-cards horizontais no mobile */
+  .card-prato {
+    flex-direction: row;
+  }
+
+  .card-imagem {
+    width: 100px;
+    height: auto;
+    min-height: 100px;
+    flex-shrink: 0;
+  }
+
+  .card-corpo {
+    padding: 14px;
+    flex: 1;
+  }
+
+  .card-badge {
+    display: none;
+  }
+
+  .card-titulo {
+    font-size: 1.1rem;
+  }
+
+  .card-descricao {
+    font-size: 0.82rem;
+    min-height: 0;
+    margin-bottom: 8px;
+  }
+
+  .card-preco {
+    font-size: 1.05rem;
   }
 }
