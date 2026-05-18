@@ -128,6 +128,78 @@ button {
   border: 1px solid var(--branco);
 }
 
+/* ---------- Cabecalho ---------- */
+.cabecalho {
+  background-color: var(--preto);
+  padding: 22px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid var(--borda-escura);
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--branco);
+}
+
+.logo-kanji {
+  font-family: var(--fonte-japones);
+  color: var(--branco);
+  font-size: 1.3rem;
+}
+
+.logo-texto {
+  font-family: var(--fonte-titulo);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.link-menu {
+  color: var(--texto-claro);
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.link-menu:hover {
+  color: var(--dourado);
+}
+
+.link-menu.ativo {
+  color: var(--dourado);
+}
+
+/* Botao do menu mobile (hamburger) */
+.botao-menu-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+}
+
+.botao-menu-mobile span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--branco);
+  transition: 0.3s;
+}
+
 /* ---------- Responsivo (mobile) ---------- */
 @media (max-width: 768px) {
   .container {
@@ -136,5 +208,30 @@ button {
 
   .titulo-secao {
     font-size: 1.9rem;
+  }
+
+  .botao-menu-mobile {
+    display: flex;
+  }
+
+  .navegacao {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--preto);
+    border-bottom: 1px solid var(--borda-escura);
+    padding: 20px;
+  }
+
+  .navegacao.aberto {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
   }
 }
