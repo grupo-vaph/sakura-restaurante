@@ -7,4 +7,5 @@ Victor Ulisses de Morais Silva - RM572634
 Henrique Giusti de Souza - RM570766
 Pietro Alexandre Guerato - RM571232
 
-Link GitHub Pages: (preencher após publicação)
+Link Repositório: https://github.com/grupo-vaph/sakura-restaurante
+Link GitHub Pages: https://grupo-vaph.github.io/sakura-restaurante/
