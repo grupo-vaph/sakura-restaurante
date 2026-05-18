@@ -842,43 +842,6 @@ button {
   @media (max-width: 768px) {
     .promocao {
       padding: 20px 0 50px;
-    opacity: 0.85;
-    letter-spacing: 0.05em;
-  }
-
-  @media (max-width: 768px) {
-    .promocao {
-      padding: 20px 0 50px;
-    }
-
-    .promocao-banner {
-    .promocao-banner {
-      flex-direction: column;
-      flex-direction: column;
-      align-items: flex-start;
-      align-items: flex-start;
-      padding: 30px 24px;
-      gap: 24px;
-    }
-    }
-
-    .promocao-titulo {
-    .promocao-titulo {
-      flex-direction: column;
-      align-items: flex-start;
-      align-items: flex-start;
-      padding: 30px 24px;
-      gap: 24px;
-      gap: 24px;
-    }
-    }
-
-
-  }
-
-  @media (max-width: 768px) {
-    .promocao {
-      padding: 20px 0 50px;
     }
 
     .promocao-banner {
