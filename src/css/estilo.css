@@ -200,6 +200,79 @@ button {
   transition: 0.3s;
 }
 
+/* ---------- Hero ---------- */
+.hero {
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 80px 0 100px;
+}
+
+.hero-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-texto .kanji {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.kanji-pt {
+  color: var(--texto-claro);
+  letter-spacing: 0.2em;
+  font-family: var(--fonte-texto);
+  font-size: 0.78rem;
+}
+
+.hero-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 24px;
+}
+
+.hero-descricao {
+  font-size: 1rem;
+  color: var(--texto-claro);
+  line-height: 1.7;
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-imagem {
+  background-color: #3a0a14;
+  height: 440px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-imagem::after {
+  content: "";
+  position: absolute;
+  bottom: 38%;
+  width: 60px;
+  height: 2px;
+  background-color: var(--dourado);
+}
+
+.placeholder-texto {
+  color: var(--dourado);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
 /* ---------- Responsivo (mobile) ---------- */
 @media (max-width: 768px) {
   .container {
@@ -232,6 +305,33 @@ button {
   .menu {
     flex-direction: column;
     gap: 18px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 40px 0 60px;
+  }
+
+  .hero-conteudo {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-imagem {
+    order: -1;
+    height: 240px;
+  }
+
+  .hero-titulo {
+    font-size: 2.6rem;
+  }
+
+  .hero-botoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-botoes .botao {
     text-align: center;
   }
 }
