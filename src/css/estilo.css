@@ -404,6 +404,55 @@ button {
   font-weight: 600;
 }
 
+/* ---------- Rodape ---------- */
+.rodape {
+  background-color: var(--preto);
+  color: var(--texto-claro);
+  padding: 70px 0 30px;
+}
+
+.rodape-grade {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--borda-escura);
+}
+
+.logo-rodape {
+  margin-bottom: 16px;
+}
+
+.rodape-tagline {
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+  line-height: 1.6;
+}
+
+.rodape-titulo {
+  font-family: var(--fonte-texto);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--dourado);
+  margin-bottom: 18px;
+}
+
+.rodape-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--texto-claro);
+}
+
+.rodape-base {
+  padding-top: 24px;
+  text-align: left;
+  font-size: 0.78rem;
+  color: var(--texto-suave);
+}
+
 /* ---------- Responsivo (mobile) ---------- */
 @media (max-width: 768px) {
   .container {
@@ -526,5 +575,15 @@ button {
 
   .card-preco {
     font-size: 1.05rem;
+  }
+
+  .rodape {
+    padding: 50px 0 24px;
+  }
+
+  .rodape-grade {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-bottom: 28px;
   }
 }
