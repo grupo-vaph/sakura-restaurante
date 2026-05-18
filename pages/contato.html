@@ -1,91 +1,142 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato · Sakura</title>
-  <link rel="stylesheet" href="../src/css/estilo.css">
-</head>
-<body>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato · Sakura</title>
+    <link rel="stylesheet" href="../src/css/estilo.css">
+  </head>
+  <body>
 
-  <!-- ===== Cabecalho ===== -->
-  <header class="cabecalho">
-    <div class="container cabecalho-conteudo">
-      <a href="../index.html" class="logo">
-        <span class="logo-kanji">桜</span>
-        <span class="logo-texto">SAKURA</span>
-      </a>
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a href="../index.html" class="logo">
+          <span class="logo-kanji">桜</span>
+          <span class="logo-texto">SAKURA</span>
+        </a>
 
-      <nav class="navegacao" id="navegacao">
-        <ul class="menu">
-          <li><a href="../index.html" class="link-menu">Home</a></li>
-          <li><a href="portifolio.html" class="link-menu">Cardápio</a></li>
-          <li><a href="sobre.html" class="link-menu">Sobre</a></li>
-          <li><a href="contato.html" class="link-menu ativo">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="navegacao" id="navegacao">
+          <ul class="menu">
+            <li><a href="../index.html" class="link-menu">Home</a></li>
+            <li><a href="portifolio.html" class="link-menu">Cardápio</a></li>
+            <li><a href="sobre.html" class="link-menu">Sobre</a></li>
+            <li><a href="contato.html" class="link-menu ativo">Contato</a></li>
+          </ul>
+        </nav>
 
-      <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+        <button class="botao-menu-mobile" id="botaoMenuMobile" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
 
-  <main>
-    <!-- Conteudo do contato vai aqui -->
-  </main>
+    <main>
 
-  <!-- ===== Rodape ===== -->
-  <footer class="rodape">
-    <div class="container">
-      <div class="rodape-grade">
+      <section class="pagina-hero">
+        <div class="container">
+          <p class="kanji">お問い合わせ · <span class="kanji-pt">FALE CONOSCO</span></p>
+          <h1 class="pagina-titulo">Vamos conversar</h1>
+        </div>
+      </section>
 
-        <div class="rodape-coluna rodape-marca">
-          <div class="logo logo-rodape">
-            <span class="logo-kanji">桜</span>
-            <span class="logo-texto">SAKURA</span>
+      <section class="contato">
+        <div class="container contato-grade">
+
+          <div class="contato-form">
+            <h2 class="form-titulo">Envie sua mensagem</h2>
+            <p class="form-subtitulo">Respondemos em até 24h em dias úteis.</p>
+
+            <form id="formContato">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+
+              <label for="descricao">Descrição</label>
+              <textarea id="descricao" name="descricao" placeholder="Conte como podemos ajudar..." rows="4" required></textarea>
+
+              <button type="submit" class="botao botao-primario form-botao">Enviar mensagem</button>
+            </form>
           </div>
-          <p class="rodape-tagline">
-            Restaurante japonês autêntico<br>desde 2002.
-          </p>
+
+          <div class="contato-info">
+
+            <div class="info-card">
+              <h3 class="info-titulo">📍 Endereço</h3>
+              <p>R. Galvão Bueno, 540<br>Liberdade · São Paulo, SP<br>CEP 01506-000</p>
+            </div>
+
+            <div class="info-card">
+              <h3 class="info-titulo">☎ Contato direto</h3>
+              <p>(11) 4002-8922<br>WhatsApp (11) 99999-1234<br>contato@sakura.com.br</p>
+            </div>
+
+            <div class="info-card">
+              <h3 class="info-titulo">🕒 Horário</h3>
+              <p>Terça a Domingo<br>18h às 23h30<br>Segunda · Fechado</p>
+            </div>
+
+            <div class="info-mapa">
+              <span class="placeholder-texto-claro">[ mapa · placeholder ]</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="rodape">
+      <div class="container">
+        <div class="rodape-grade">
+
+          <div class="rodape-coluna rodape-marca">
+            <div class="logo logo-rodape">
+              <span class="logo-kanji">桜</span>
+              <span class="logo-texto">SAKURA</span>
+            </div>
+            <p class="rodape-tagline">
+              Restaurante japonês autêntico<br>desde 2002.
+            </p>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4 class="rodape-titulo">CONTATO</h4>
+            <ul class="rodape-lista">
+              <li>(11) 4002-8922</li>
+              <li>contato@sakura.com.br</li>
+              <li>R. Galvão Bueno, 540 — Liberdade</li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4 class="rodape-titulo">FUNCIONAMENTO</h4>
+            <ul class="rodape-lista">
+              <li>Ter – Dom · 18h às 23h30</li>
+              <li>Segunda · Fechado</li>
+            </ul>
+          </div>
+
+          <div class="rodape-coluna">
+            <h4 class="rodape-titulo">REDES</h4>
+            <ul class="rodape-lista">
+              <li>Instagram · @sakurasp</li>
+              <li>Facebook · /sakurasp</li>
+              <li>WhatsApp · Atendimento</li>
+            </ul>
+          </div>
+
         </div>
 
-        <div class="rodape-coluna">
-          <h4 class="rodape-titulo">CONTATO</h4>
-          <ul class="rodape-lista">
-            <li>(11) 4002-8922</li>
-            <li>contato@sakura.com.br</li>
-            <li>R. Galvão Bueno, 540 — Liberdade</li>
-          </ul>
+        <div class="rodape-base">
+          <p>© 2026 Sakura Restaurante. Todos os direitos reservados.</p>
         </div>
-
-        <div class="rodape-coluna">
-          <h4 class="rodape-titulo">FUNCIONAMENTO</h4>
-          <ul class="rodape-lista">
-            <li>Ter – Dom · 18h às 23h30</li>
-            <li>Segunda · Fechado</li>
-          </ul>
-        </div>
-
-        <div class="rodape-coluna">
-          <h4 class="rodape-titulo">REDES</h4>
-          <ul class="rodape-lista">
-            <li>Instagram · @sakurasp</li>
-            <li>Facebook · /sakurasp</li>
-            <li>WhatsApp · Atendimento</li>
-          </ul>
-        </div>
-
       </div>
+    </footer>
 
-      <div class="rodape-base">
-        <p>© 2026 Sakura Restaurante. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="../src/js/script.js"></script>
-</body>
-</html>
+    <script src="../src/js/script.js"></script>
+  </body>
+  </html>
