@@ -782,3 +782,121 @@ button {
       font-size: 0.85rem;
     }
   }
+
+  .promocao {
+    background-color: var(--creme);
+    padding: 40px 0 90px;
+  }
+
+  .promocao-banner {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border-radius: 8px;
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .subtitulo-claro {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    color: var(--dourado);
+    margin-bottom: 18px;
+  }
+
+  .promocao-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .promocao-descricao {
+    font-size: 0.95rem;
+    opacity: 0.92;
+    max-width: 480px;
+  }
+
+  .promocao-preco {
+    text-align: right;
+  }
+
+  .promocao-valor {
+    font-family: var(--fonte-titulo);
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--dourado);
+    display: block;
+  }
+
+  .promocao-unidade {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .promocao {
+      padding: 20px 0 50px;
+    opacity: 0.85;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 768px) {
+    .promocao {
+      padding: 20px 0 50px;
+    }
+
+    .promocao-banner {
+    .promocao-banner {
+      flex-direction: column;
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: flex-start;
+      padding: 30px 24px;
+      gap: 24px;
+    }
+    }
+
+    .promocao-titulo {
+    .promocao-titulo {
+      flex-direction: column;
+      align-items: flex-start;
+      align-items: flex-start;
+      padding: 30px 24px;
+      gap: 24px;
+      gap: 24px;
+    }
+    }
+
+
+  }
+
+  @media (max-width: 768px) {
+    .promocao {
+      padding: 20px 0 50px;
+    }
+
+    .promocao-banner {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 24px;
+      gap: 24px;
+    }
+
+    .promocao-titulo {
+      font-size: 1.7rem;
+    }
+
+    .promocao-preco {
+      text-align: left;
+    }
+
+    .promocao-valor {
+      font-size: 3.5rem;
+    }
+  }
